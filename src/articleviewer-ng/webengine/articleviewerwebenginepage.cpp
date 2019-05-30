@@ -38,7 +38,7 @@ ArticleViewerWebEnginePage::ArticleViewerWebEnginePage(QWebEngineProfile *profil
     settings()->setAttribute(QWebEngineSettings::HyperlinkAuditingEnabled, false);
     settings()->setAttribute(QWebEngineSettings::JavascriptCanAccessClipboard, false);
     settings()->setAttribute(QWebEngineSettings::JavascriptCanOpenWindows, false);
-    settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, false);
+    settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, Settings::enableJavascript());
     settings()->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, false);
     settings()->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, false);
     settings()->setAttribute(QWebEngineSettings::LocalStorageEnabled, false);
